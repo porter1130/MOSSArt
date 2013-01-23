@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.SharePoint;
 using System.Xml;
 using Microsoft.SharePoint.Utilities;
@@ -17,8 +14,6 @@ namespace MOSSArt.CAMLQuery
         public readonly object Value;
 
         private SPFieldType _spFieldType = SPFieldType.Text;
-
-        private Type _valueType = typeof(Object);
 
         public Type ValueType
         {

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace MOSSArt.CAMLQuery
+﻿namespace MOSSArt.CAMLQuery
 {
 
     public abstract class QuerySchema
@@ -36,13 +31,13 @@ namespace MOSSArt.CAMLQuery
                 this._offsetDays += days;
             }
 
-            public static QuerySchema.Today operator +(QuerySchema.Today q, int iValue)
+            public static Today operator +(Today q, int iValue)
             {
                 q.AddDays(iValue);
                 return q;
             }
 
-            public static QuerySchema.Today operator -(QuerySchema.Today q, int iValue)
+            public static Today operator -(Today q, int iValue)
             {
                 q.AddDays(-iValue);
                 return q;

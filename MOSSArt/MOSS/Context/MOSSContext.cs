@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.SharePoint;
+﻿using Microsoft.SharePoint;
 
 namespace MOSSArt
 {
@@ -12,7 +8,7 @@ namespace MOSSArt
 
         public static MOSSContext Current
         {
-            get { return MOSSContext._context; }
+            get { return _context; }
         }
 
         private SPWeb _web;

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml;
+﻿using System.Xml;
 
 namespace MOSSArt.CAMLQuery
 {
@@ -20,7 +16,7 @@ namespace MOSSArt.CAMLQuery
             Right = right;
         }
 
-        public override void ToCAML(IFieldInternalNameProvider provider, System.Xml.XmlNode parentNode)
+        public override void ToCAML(IFieldInternalNameProvider provider, XmlNode parentNode)
         {
             XmlElement node = parentNode.OwnerDocument.CreateElement(LogicalJoin.ToString());
 

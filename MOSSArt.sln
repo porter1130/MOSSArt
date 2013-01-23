@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOSSArt", "PorterWang\MOSSArt.csproj", "{B2AEFB9E-DF84-4F58-B36C-0B3BBCB6FF9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOSSArt", "MOSSArt\MOSSArt.csproj", "{B2AEFB9E-DF84-4F58-B36C-0B3BBCB6FF9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

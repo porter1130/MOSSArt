@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace MOSSArt.CAMLQuery
+﻿namespace MOSSArt.CAMLQuery
 {
     public class TypeFieldRef<TEntity, TField>:BaseFieldRef<TEntity> where TEntity:class,new()
     {

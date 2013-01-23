@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.SharePoint.Workflow;
+﻿using Microsoft.SharePoint.Workflow;
 using System.Globalization;
 using Microsoft.SharePoint;
 
@@ -12,7 +8,7 @@ namespace MOSSArt
     public class MOSSWorkflow
     {
 
-        public static SPWorkflow StartWorkflow(Microsoft.SharePoint.SPListItem item, string wfName, WorkflowVariableValues variableValues)
+        public static SPWorkflow StartWorkflow(SPListItem item, string wfName, WorkflowVariableValues variableValues)
         {
             SPWorkflowAssociation wfAss = item.ParentList.WorkflowAssociations.GetAssociationByName(wfName, CultureInfo.CurrentCulture);
             string eventData = SerializeUtil.Serialize(variableValues);

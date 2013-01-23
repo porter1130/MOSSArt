@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Xml.Serialization;
 using System.Xml;
-using System.Runtime.Serialization;
 
 namespace MOSSArt
 {
@@ -72,7 +69,7 @@ namespace MOSSArt
             }
         }
 
-        public void WriteXml(System.Xml.XmlWriter writer)
+        public void WriteXml(XmlWriter writer)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(TKey));
 
