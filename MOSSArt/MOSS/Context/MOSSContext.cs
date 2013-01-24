@@ -1,10 +1,11 @@
 ﻿using Microsoft.SharePoint;
+using System;
 
 namespace MOSSArt
 {
-    public class MOSSContext
+    public class MOSSContext : IDisposable
     {
-        private static MOSSContext _context = null;
+        private static MOSSContext _context;
 
         public static MOSSContext Current
         {
@@ -40,6 +41,11 @@ namespace MOSSArt
             }
 
             return _context;
+        }
+
+        public void Dispose()
+        {
+            _context = null;
         }
     }
 }
