@@ -69,6 +69,11 @@ namespace MOSSArt.CAMLQuery
 
             fieldNode.Attributes.Append(attribute);
 
+            if (this.Operator == ComparisonOperators.IsNull || this.Operator == ComparisonOperators.IsNotNull)
+            {
+                return;
+            }
+
             XmlNode valueNode = parentNode.OwnerDocument.CreateElement("Value");
             node.AppendChild(valueNode);
 
